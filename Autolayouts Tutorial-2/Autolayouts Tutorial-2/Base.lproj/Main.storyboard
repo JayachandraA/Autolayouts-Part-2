@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kYe-ui-PsF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookInfoCell" rowHeight="140" id="j2N-1w-zeS" customClass="BookInfoCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j2N-1w-zeS" id="SwR-Vt-UcW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gone_girl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k6L-nh-cAJ" userLabel="Book Image View">
+                                                    <rect key="frame" x="8" y="5" width="83" height="128"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="B7Y-xt-uG7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gone Girl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdJ-yV-pOX" userLabel="Name Label">
+                                                    <rect key="frame" x="109" y="16" width="465" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gillian Flynn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BN-49-5Ai" userLabel="Author Label">
+                                                    <rect key="frame" x="109" y="58" width="474" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtz-sn-9F0" userLabel="Add to Basket Button">
+                                                    <rect key="frame" x="451" y="94" width="134" height="39"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="39" id="hGR-Dr-RMq"/>
+                                                        <constraint firstAttribute="width" constant="134" id="sSs-ZB-GI4"/>
+                                                    </constraints>
+                                                    <state key="normal" image="add2Bag2.png"/>
+                                                </button>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="k6L-nh-cAJ" firstAttribute="leading" secondItem="SwR-Vt-UcW" secondAttribute="leading" constant="8" id="73l-qc-R2g"/>
+                                                <constraint firstItem="2BN-49-5Ai" firstAttribute="leading" secondItem="k6L-nh-cAJ" secondAttribute="trailing" constant="18" id="8gz-Kn-OOH"/>
+                                                <constraint firstAttribute="bottom" secondItem="k6L-nh-cAJ" secondAttribute="bottom" constant="6" id="91J-xh-lU2"/>
+                                                <constraint firstAttribute="trailing" secondItem="2BN-49-5Ai" secondAttribute="trailing" constant="17" id="A7r-S8-hF6"/>
+                                                <constraint firstItem="GdJ-yV-pOX" firstAttribute="leading" secondItem="k6L-nh-cAJ" secondAttribute="trailing" constant="18" id="HMZ-T4-t0q"/>
+                                                <constraint firstAttribute="trailing" secondItem="GdJ-yV-pOX" secondAttribute="trailing" constant="26" id="IGD-1h-Uoi"/>
+                                                <constraint firstAttribute="trailing" secondItem="mtz-sn-9F0" secondAttribute="trailing" constant="15" id="QVg-gK-ZqK"/>
+                                                <constraint firstItem="k6L-nh-cAJ" firstAttribute="top" secondItem="SwR-Vt-UcW" secondAttribute="top" constant="5" id="cwq-wA-7Ev"/>
+                                                <constraint firstItem="2BN-49-5Ai" firstAttribute="top" secondItem="GdJ-yV-pOX" secondAttribute="bottom" constant="21" id="m6g-h6-4qg"/>
+                                                <constraint firstAttribute="bottom" secondItem="mtz-sn-9F0" secondAttribute="bottom" constant="6" id="pYl-Cl-rKS"/>
+                                                <constraint firstItem="GdJ-yV-pOX" firstAttribute="top" secondItem="SwR-Vt-UcW" secondAttribute="top" constant="16" id="yqu-UD-Xmr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="author" destination="2BN-49-5Ai" id="a8S-ai-gFU"/>
+                                            <outlet property="icon" destination="k6L-nh-cAJ" id="0rb-Rc-kTt"/>
+                                            <outlet property="name" destination="GdJ-yV-pOX" id="J6A-Vu-JnW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1fJ-Tn-yA4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wG0-Mm-XLq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kYe-ui-PsF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A5u-6x-dcr"/>
+                            <constraint firstItem="kYe-ui-PsF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dai-Z7-PQN"/>
+                            <constraint firstAttribute="trailing" secondItem="kYe-ui-PsF" secondAttribute="trailing" id="Sae-TF-faf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kYe-ui-PsF" secondAttribute="bottom" id="xFr-T7-yIE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add2Bag2.png" width="134" height="39"/>
+        <image name="gone_girl.jpg" width="84" height="130"/>
+    </resources>
+</document>
